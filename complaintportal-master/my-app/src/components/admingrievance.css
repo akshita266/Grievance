@@ -1,0 +1,169 @@
+.Gtable-container {
+  width: 100%;
+  margin-top: 10px;
+  height: 600px; /* Adjust the height as needed */
+  overflow: auto; /* Enable scrolling within the container */
+  display: block;
+}
+
+.Gtable {
+  width: 100%;
+  text-align: center; /* Align all content in the table center */
+  border-collapse: collapse;
+}
+
+.Gtable th,
+.Gtable td {
+  text-align: center; /* Align content in table cells center */
+  padding: 8px; /* Add padding for better readability */
+  border: 1px solid #dee2e6; /* Add border to table cells */
+}
+
+.Gtable thead {
+  position: sticky; /* Make table header sticky */
+  top: 0;
+  z-index: 1;
+  background-color: #343a40; /* Dark color for table heading */
+  color: white; /* Text color for table heading */
+}
+
+.Gtable tbody tr:nth-child(even) {
+  background-color: #f2f2f2; /* Light grey color for even rows */
+}
+
+.Gtable tbody tr:nth-child(odd) {
+  background-color: #ffffff; /* White color for odd rows */
+}
+
+.red-text {
+  color: red;
+}
+
+.green-text {
+  color: green;
+}
+
+.logout {
+  display: flex;
+  justify-content: center; /* Center the button horizontally */
+  margin-top: 10px; /* Add some space above the button */
+  width: 100%;
+}
+.btn2{
+  background-color: rgb(237, 43, 43);
+  border: 1px solid black;
+  border-radius: 2px;
+  height: 25px;
+  width: 48px;
+  padding: 0.02px;
+  margin: 5px;
+}
+.btn2:hover{
+  background-color:rgb(77, 94, 100,0.923);
+  color: white;
+}
+.updategri{
+  border: 1px solid black;
+  border-radius: 2px;
+  background-color:rgb(91, 218, 91);
+  color: black;
+
+  padding-top: 4px;
+  padding-left: 4px;
+  padding-right: 3px;
+  font-size: 12px;
+  width: 48px;
+  margin: 5px;
+  height: 25px;
+}
+.updategri:hover{
+  background-color:whitesmoke;
+  color: white;
+}
+.action-tag{
+  display: flex;
+}
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+  .Gtable th,
+  .Gtable td {
+    padding: 6px; /* Reduce padding for smaller screens */
+  }
+  .updategri{
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .Gtable th,
+  .Gtable td {
+    padding: 4px; /* Reduce padding for smaller screens */
+    font-size: 0.9em; /* Reduce font size for smaller screens */
+  }
+  .updategri{
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .Gtable-container {
+    height: 600px; /* Adjust height for smaller screens */
+  }
+
+  .Gtable th,
+  .Gtable td {
+    padding: 2px; /* Reduce padding for smaller screens */
+    font-size: 0.8em; /* Reduce font size for smaller screens */
+  }
+
+  .Gtable th, .Gtable td {
+    display: block;
+    width: 100%;
+    text-align: left; /* Align text to left for small screens */
+  }
+
+  .Gtable thead {
+    display: none; /* Hide the header on small screens */
+  }
+
+  .Gtable tbody tr {
+    display: block;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #dee2e6;
+  }
+
+  .Gtable tbody tr td {
+    padding-left: 55%;
+    position: relative;
+  }
+
+  .Gtable tbody tr td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 10px;
+    font-weight: bold;
+    text-align: left;
+    background-color: #f8f9fa;
+    border-right: 1px solid #dee2e6;
+  }
+  .updategri{
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .Gtable-container {
+    height: 600px; /* Adjust height for smaller screens */
+  }
+
+  .Gtable th,
+  .Gtable td {
+    padding: 2px; /* Reduce padding for smaller screens */
+    font-size: 0.7em; /* Reduce font size for smaller screens */
+  }
+  .updategri{
+    text-decoration: none;
+  }
+}

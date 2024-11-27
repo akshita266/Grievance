@@ -1,0 +1,83 @@
+/* General Styles */
+
+
+.container3 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.profile {
+  flex: 1 1 50%;
+  max-width: 30%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.gt {
+  flex: 1 1 50%;
+  max-width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.box3 {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.form-label3 {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-control3 {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.Gtable {
+  margin: 10px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.Gtable th, .Gtable td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.Gtable thead {
+  background-color: #343a40;
+  color: white;
+}
+
+.Gtable tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.Gtable tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.red-text {
+  color: red;
+}
+
+.green-text {
+  color: green;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .profile, .gt {
+    flex: 1 1 100%;
+    max-width: 80%;
+  }
+}

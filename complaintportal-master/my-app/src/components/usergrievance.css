@@ -1,0 +1,90 @@
+.box {
+    max-width: 600px; /* Set a maximum width for the form box */
+    min-width: 300px; /* Set a minimum width for the form box */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px;
+    margin-top: 100px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .box h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-label {
+    font-weight: bold;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  textarea.form-control {
+    resize: vertical; /* Allow vertical resizing for the textarea */
+  }
+  
+  #customFile {
+    display: none; /* Hide the file input */
+  }
+  
+  #customFileLabel {
+    cursor: pointer;
+    background-color: rgb(47, 46, 46);
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  #customFileLabel:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-primary {
+    background-color: rgb(47, 46, 46);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 992px) {
+    .box {
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .box {
+      padding: 10px;
+      min-width: auto; /* Override minimum width for smaller screens */
+    }
+    
+    .form-control {
+      padding: 6px;
+    }
+    
+    .btn-primary {
+      padding: 8px 16px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .box {
+      padding: 8px;
+    }
+  }
+  
